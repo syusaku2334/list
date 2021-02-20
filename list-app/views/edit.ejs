@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+         <link rel="stylesheet" href="/css/style.css">
+         <title>LIST APP</title>
+    </head>
+    <body>
+        <header>
+            <a href="/" class="header-logo">LIST APP</a>
+        </header>
+        <div class="container">
+            <div class="container-header">
+                <h1>買い物リスト編集</h1>
+            </div>
+            <div class="item-form">
+                <p class="form">
+                    <form action="/update/<%= item.id %>" method="POST">
+                        <input type="text" value="<%= item.name %>" name="itemName">
+                        <input class="add-button" type="submit" value="更新する">
+                    </form>
+                </p>
+                <div><a href="/index" class="cansel-button">もどる</a></div>
+            </div>
+        </div>    
+    </body>
+</html>
